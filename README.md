@@ -20,7 +20,7 @@ script tools.
 
 [![Button Icon]][Button Link]
 
-[Button Icon]: https://img.shields.io/badge/Download_v1.1.12-blue?style=for-the-badge&logoColor=white
+[Button Icon]: https://img.shields.io/badge/Beta-Download_v1.1.12-blue?style=for-the-badge&logoColor=white
 [Button Link]: https://devtopia.esri.com/ArcGISPro/Python/files/58991/arcgis-pro-debugger-1.1.12.zip
 
 ## Installation
