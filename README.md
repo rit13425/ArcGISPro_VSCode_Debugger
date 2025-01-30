@@ -1,4 +1,4 @@
-# ArcGIS Pro Visual Studio Code Debugger
+# ArcGIS Pro Visual Studio Code Debugger Extension
 
 ## About the Extension
 
