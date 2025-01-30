@@ -259,7 +259,7 @@ Python code in the script tool validation is embedded in the tool and needs to b
 3. Replace the contents of the code editor in the **Tool Properties** dialog **Validation** tab with the sample code below:  
     In the following example, validation_code.py (contents not shown) contains the `ToolValidator` class and is saved to the same directory as the toolbox.  
     ``` python
-    import sys
+    import os
     import sys
     import validation_code
 
