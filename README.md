@@ -253,3 +253,23 @@ Python code in the script tool validation is embedded in the tool and needs to b
     ```
 4. Continue debugging using the validation_code.py file.
 5. When you are done debugging, replace the contents of the code editor in the tool properties dialog Validation tab with those of your Python file (validation_code.py in the sample code).
+
+## Troubleshooting
+
+### If the extension fails to attach to ArcGIS Pro
+The extension fails to attach to ArcGIS Pro with the following error message:  
+
+> "Timed out waiting for debug server to connect"  
+
+This can happen if Python has not yet initialized in ArcGIS Pro, or the previous session was improperly disconnected. Try these:  
+* **Make sure Python has initialized:**  
+   In ArcGIS Pro, Python loads as needed (when a geoprocessing tool, the Python Window, or a Notebook are opened). The debugger will not be able to attach until Python has initialized.
+   1. Open the tool you are debugging, then try attaching again  
+   
+   **NOTE:** Opening any geoprocessing tool will cause Python to initialize. Alternatively, open either the Python Window or a Notebook.
+
+* **Restart:**
+    1. Close ArcGIS Pro
+    2. Wait ~15 seconds for locks to clear (alternatively, restart Windows)
+    3. Start ArcGIS Pro and try attaching again
+
