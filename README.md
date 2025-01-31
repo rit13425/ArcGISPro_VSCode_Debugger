@@ -83,7 +83,7 @@ Debug your script tool while it is running on another machine (of your coworker,
 >    - ArcGIS Pro Debugger
 > - Requires OpenSSH Client  
 >
-> _On the remote (server, target) machine_
+> _On the remote (host, target) machine_
 > - Requires VSC and the following additional extensions:
 >    - ArcGIS Pro Debugger
 > - Requires OpenSSH Server
