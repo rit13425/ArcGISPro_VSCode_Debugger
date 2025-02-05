@@ -1,5 +1,8 @@
 # ArcGIS Pro Visual Studio Code Debugger Extension
 
+![esri_logo](https://github.com/user-attachments/assets/7bcc0bc8-25b3-442a-9920-f8d364870e9b)
+
+
 ## About the Extension
 
 This extension allows debugging ArcGIS Pro script tools (.atbx, .pyt) using Visual Studio Code (VSC).
