@@ -25,6 +25,20 @@ script tools for ArcGIS Pro.
     **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (right).  
     ![image](https://github.com/user-attachments/assets/dfebe000-e7f6-4b3b-8acb-0db263c616a7)
 
+## Enable ArcGIS Pro Debug mode
+
+> [!IMPORTANT]  
+> The ArcGIS Pro Debug Mode must be enabled in order to successfully attach to ArcGIS Pro.
+
+1. **Open VSC**
+2. **Enable or Disable ArcGIS Pro Debug Mode**
+    1. Press `Ctrl+Shift+P` to open the command pallette
+    2. Run the command **ArcGIS Pro Debugger: Set ArcGIS Pro Debug Mode**
+    3. Select "ON" if starting a new debugging session
+       Select "OFF" if ending an existing debug session  
+
+       **NOTE:** Attaching to ArcGIS Pro will fail when "OFF"
+
 ## Local Debugging
 
 Debug your scripts on your own machine as you develop your script tool.
