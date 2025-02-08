@@ -104,7 +104,7 @@ Debug your script tool while it is running on another machine (of your coworker,
 > - Requires VSC and the following additional extensions:
 >    - ArcGIS Pro Debugger
 > - Requires OpenSSH Server
-> - Requires ArcGIS Pro >= 3.4
+> - Requires ArcGIS Pro >= 3.5
 
 1. **Start the SSH service:**  
     _On the remote machine_
