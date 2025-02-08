@@ -34,7 +34,7 @@ script tools for ArcGIS Pro.
 2. **Enable or Disable ArcGIS Pro Debug Mode**
     1. Press `Ctrl+Shift+P` to open the command pallette
     2. Run the command **ArcGIS Pro Debugger: Set ArcGIS Pro Debug Mode**
-    3. Select "ON" if starting a new debugging session
+    3. Select "ON" if starting a new debugging session  
        Select "OFF" if ending an existing debug session  
 
        **NOTE:** Attaching to ArcGIS Pro will fail when "OFF"
