@@ -48,7 +48,7 @@ Debug your scripts on your own machine as you develop your script tool.
 > [!IMPORTANT]  
 > - Requires VSC and the following additional extensions:
 >    - ArcGIS Pro Debugger
-> - Requires ArcGIS Pro
+> - Requires ArcGIS Pro >= 3.5
 
 1. **Open VSC**
 2. **Open your project folder in VSC**:  
