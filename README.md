@@ -39,6 +39,8 @@ script tools for ArcGIS Pro.
 
        **NOTE:** Attaching to ArcGIS Pro will fail when "OFF"
 
+       **NOTE:** While "ON", you may notice a decrease in performance of ArcGIS Pro. We recommend always setting to "OFF" when you are done debugging.
+
 ## Local Debugging
 
 Debug your scripts on your own machine as you develop your script tool.
