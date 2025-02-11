@@ -86,7 +86,7 @@ Debug your scripts on your own machine as you develop your script tool.
 
     **NOTE:** Once attached, the **Debug Toolbar** should appear with a socket icon indicating that you are attached and debugging.  
 
-    **NOTE:** If you have not opened a script tool, attaching will fail (more precisely, if the Python environment has not been initialized, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm)
+    **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail (more precisely, if the Python environment has not been initialized in ArcGIS Pro, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm)
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** item in the status bar to perform this action.
 8. **Debugging your script**:  
@@ -224,7 +224,7 @@ by the extension.
 
     **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
 
-    **NOTE:** If you have not opened a script tool, attaching will fail (more precisely, if the Python environment has not been initialized, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm)
+    **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail (more precisely, if the Python environment has not been initialized in ArcGIS Pro, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm)  
 13. **Run your script tool in ArcGIS Pro**:  
     _On the remote machine_  
     1. Open the tool you are debugging  
