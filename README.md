@@ -222,16 +222,16 @@ by the extension.
 
     **NOTE:** Once attached, the **Debug Toolbar** should appear with a socket icon indicating that you are attached and debugging.  
 
-    **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
+    **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail (more precisely, if the Python environment has not been initialized in ArcGIS Pro, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm)
 
-    **NOTE:** If you have not opened a script tool (in ArcGIS Pro), attaching will fail (more precisely, if the Python environment has not been initialized in ArcGIS Pro, there is no Python.exe process to attach to, see https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/activate-an-environment.htm)  
-13. **Run your script tool in ArcGIS Pro**:  
+    **NOTE:** Alternatively, you can also click on the **ArcGIS Pro Debugger** in the status bar to perform this action.  
+14. **Run your script tool in ArcGIS Pro**:  
     _On the remote machine_  
     1. Open the tool you are debugging  
     2. Run the tool
 
     **NOTE:** Execution of the tool will stop when a breakpoint is hit, in the UI _on the remote machine_ it will appear to have paused.  
-14. **Debugging your script**:  
+15. **Debugging your script**:  
     _On the local machine_  
     1. The execution will pause at the breakpoints set in VSC, allowing you to debug the script.  
 
