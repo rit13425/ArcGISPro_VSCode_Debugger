@@ -37,7 +37,7 @@ script tools for ArcGIS Pro.
     3. Select **"ON"** if starting a new debugging session  
        Select **"OFF"** if ending an existing debug session  
 
-       **NOTE:** Attaching to ArcGIS Pro will fail when "OFF"
+       **NOTE:** Attaching to ArcGIS Pro will fail when "OFF".
 
        **NOTE:** While "ON", you may notice a decrease in performance of ArcGIS Pro. We recommend always setting to "OFF" when you are done debugging.
 
