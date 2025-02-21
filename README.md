@@ -292,3 +292,49 @@ This can happen if Python has not yet initialized in ArcGIS Pro, or the previous
     2. Wait ~15 seconds for locks to clear (alternatively, restart Windows)
     3. Start ArcGIS Pro and try attaching again
 
+### If code using `subprocess` hangs
+Code using `subprocess` hangs indefinitly while debugger is attached to ArcGIS Pro.
+
+* **Use subprocess.communicate() with a timeout.**
+This avoids potential blocking issues while reading out data.
+
+For example, the following script uses subprocess to run another Python file and retreives the outputs:
+
+``` python
+
+import arcpy
+import os
+import sys
+import subprocess
+import time
+
+MSG_STR_SPLITTER = " | "
+CREATE_NO_WINDOW = 0x08000000
+
+def execute_subprocess(script_path: str) -> str:
+    inputs = [
+        os.path.join(sys.exec_prefix, "python.exe"),
+        script_path
+    ]
+    try:
+        process = subprocess.Popen(
+            inputs,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            creationflags=CREATE_NO_WINDOW,
+            universal_newlines=True
+        )
+        # Read all output with timeout to prevent hanging
+        output, error = process.communicate(timeout=30)
+        msg = output.strip()
+        if error:
+            msg += "\n" + error.strip()
+        return msg
+    except subprocess.TimeoutExpired:
+        process.kill()
+        output, error = process.communicate()
+        return f"{output.strip()}\nSubprocess timed out."
+    
+subproc_file = os.path.join(os.getcwd(), "subproc.py")
+arcpy.AddMessage(execute_subprocess(subproc_file))
+```
