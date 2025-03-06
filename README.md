@@ -16,14 +16,24 @@ script tools for ArcGIS Pro.
 - Debug ArcGIS Pro Script Tools (.atbx) and Python Toolboxes (.pyt)
 - Debug code on the local machine or remotely on a different machine
 
-## Installation
+### Installation
 
-1. Install the latest ArcGIS Pro Debugger extension from the VSC **Marketplace**:  
-2. After the extension is installed, you may need to reload Visual Studio Code to activate the extension.  
-   You can do this by using the **Command Palette** (Ctrl+Shift+P or Cmd+Shift+P) and selecting **Developer: Reload Window**.  
+1. Download the latest ArcGIS Pro Debugger extension (.vsix):  
+    **NOTE:** It will download a .zip archive
+2. Unzip the downloaded archive
+3. Now install the extension in Visual Studio Code:
+    1. Open Visual Studio Code
+    2. Open the Extensions pane
+    3. Click on the three dots (...) in the top-right corner of the Extensions pane.  
+    4. Select the Install from VSIX option    
+    ![image](https://github.com/user-attachments/assets/53d73e50-b7dc-45fd-8ffc-5570398a7513)
+    6. Navigate to the directory where the .vsix file is located
+    7. Select the .vsix file and click Open
+4. After the extension is installed, you may need to reload Visual Studio Code to activate the extension. You can do this by using the Command Palette (Ctrl+Shift+P or Cmd+Shift+P) and selecting Developer: Reload Window.  
+    **Note:** You should see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an ArcGIS Pro Debugger will appear in the status bar (right).  
+    ![image](https://github.com/user-attachments/assets/93dad91d-4bf1-4197-b7c0-7c163d1c3b3a)
 
-    **Note:** You may see popups indicating the directory where ArcGIS Pro is installed and the Python interpreter path. Additionally, an **ArcGIS Pro Debugger** item will appear in the status bar (right).  
-    ![image](https://github.com/user-attachments/assets/dfebe000-e7f6-4b3b-8acb-0db263c616a7)
+**Note:** After unzipping the .vsix file you can alternatively drag and drop it to the extension section of VSC to install it.
 
 ## Enable ArcGIS Pro Debug mode
 
